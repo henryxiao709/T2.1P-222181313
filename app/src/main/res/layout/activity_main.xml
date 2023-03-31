@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_view_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Convert From:"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/convert_from"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/text_view_from"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp" />
+
+    <TextView
+        android:id="@+id/text_view_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/convert_from"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Convert To:"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/convert_to"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/text_view_to"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp" />
+
+    <EditText
+        android:id="@+id/convert_value"
+        android:layout_width="395dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/convert_to"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Kindly enter a numeric value."
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/convert_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/convert_value"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Convert"
+        app:backgroundTint="#009688" />
+
+    <TextView
+        android:id="@+id/view_result_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/convert_button"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="18dp"
+        android:textSize="34sp" />
+
+</RelativeLayout>
